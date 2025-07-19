@@ -1,0 +1,843 @@
+
+#home-header {
+    height: 580px;
+}
+
+/*Placing the hero section on the top of the page */
+.hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/library\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    width: 100%;
+}
+
+
+nav {
+    width: 100%;
+    height: 65px;
+    overflow: hidden;
+}
+
+/*Adding a layer on top of the navbar and bringing it above the hero section*/
+nav::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 66px;
+    background-color: #534841;
+    opacity: 40%;
+    z-index: 2;
+}
+
+.logo, .nav-items {
+    /*Bringing links and logo about the layer to make a transparent background*/
+    z-index: 3;
+}
+
+#bars {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav-link {
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 165px;
+    height: 41px;
+    border-radius: 28px;
+    padding: 11px 16px;
+    border: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
+    vertical-align: center;
+}
+
+.btn-primary {
+    background-color: #B5876D;
+    color: #FFFFFF;
+}
+
+.btn-secondary {
+    background-color: #D9D9D9;
+    color: #B5876D;
+}
+
+.btn-primary:hover {
+    background-color: #9C735C;
+}
+
+.btn-secondary:hover {
+    background-color: #FFFFFF;
+}
+
+.btn-link {
+    display: block;
+    width: 100%;
+    height: 50%;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: 'Zeyada', cursive;
+    color: white;
+    font-size: 50px;
+}
+
+h2 {
+    color: black;
+    font-size: 40px;
+}
+
+.book-cover {
+    height: 600px;
+    width: 380px;
+    transition: all .5s ease-in-out;
+}
+
+.book-cover:hover {
+    transform: scale(1.2)
+}
+
+.slider {
+    position: relative;
+    background-color: #534841;
+    border-radius: 24px;
+    height: 650px;
+}
+
+#author1, #author2, #author3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: none;
+}
+
+#suggestions1, #suggestions2, #suggestions3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: none;
+}
+
+.sliderButtons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.sliderButtons button {
+    height: 15px;
+    width: 15px;
+    border: 2px solid #B5876D;
+    background-color: #534841;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+p, label {
+    font-size: 18px;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.link {
+    color: #B5876D;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: #534841;
+}
+
+.footer-title {
+    color: #FFFFFF;
+}
+
+/*Placing the submit button on the right corner of the input field and styling the form*/
+.form {
+    position: relative;
+    width: 763px;
+}
+
+.form-field {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    border: solid #B5876D;
+    background-color: #534841;
+    position: relative;
+}
+
+.form-field::placeholder {
+    color: #FFFFFF;
+    opacity: 70%;
+}
+
+.submit {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 269px;
+    border-radius: 40px;
+}
+
+
+.alphabetic a {
+    color: #B5876D;
+}
+
+
+/*Placing the search icon inside the input field*/
+.search-field {
+    position: relative;
+    width: 70%;
+}
+
+.search-bar {
+    background-color: #FFFFFF;
+    padding-left: 60px;
+    border: 1px solid #B5876D;
+    border-radius: 24px;
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    z-index: 1;
+}
+
+
+.search-bar::placeholder {
+    color: #000000;
+    opacity: 50%;
+}
+
+.page-nav a {
+    text-decoration: none;
+    color: #B5876D;
+}
+
+hr {
+    background-color: #B5876D;
+    border: none;
+    height: 1px;
+}
+
+.font-regular {
+    font-weight: 500;
+}
+
+.avatar {
+    border-radius: 50%;
+    box-shadow: 0 2px gray;
+}
+
+#new-review {
+    border: 1px solid #B5876D;
+    height: 168px;
+    width: 250%;
+    border-radius: 24px;
+}
+
+.all-comments {
+    background-color: #D9D9D9;
+    position: relative;
+    border-radius: 24px;
+    height: 550px;
+    width: 1160px;
+    overflow: scroll;
+}
+
+.all-comments::-webkit-scrollbar {
+    visibility: hidden;
+    width: 0;
+}
+
+.all-comments::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D9D9D9;
+    opacity: 18%;
+    border-radius: 24px;
+}
+
+.review {
+    z-index: 2;
+    opacity: 100%;
+}
+
+.comment {
+    border: 1px solid #B5876D;
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    height: 116px;
+}
+
+.star {
+    color: #f8ce0b;
+}
+
+input[type="radio"] {
+    width: 17px;
+    height: 17px;
+}
+
+#genres {
+    display: none;
+}
+
+#authors {
+    display: none;
+}
+
+#recommendation {
+    display: none;
+}
+
+.quiz {
+    min-height: 500px;
+    background-color: #F6F6F6;
+    border-radius: 24px;
+    box-shadow: 4px 4px 25px #000000;
+}
+
+.contact-form {
+    height: 550px;
+}
+
+.input, #message {
+    border: 1px #B5876D solid;
+    border-radius: 10px;
+}
+
+.input {
+    width: 70%;
+    height: 30px;
+}
+
+label {
+    display: inline-block;
+    width: 25%;
+}
+
+
+#message {
+    width: 70%;
+    height: 300px;
+}
+
+
+.hide-nav {
+    display: none;
+}
+
+#inspRefList, #libraryRefList, #indexRefList, #quizRefList, #bookRefList {
+    display: none;
+}
+
+/*MOBILE BREAKPOIN*/
+@media only screen and (max-width: 576px) {
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 0;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+
+    a.nav-link {
+        color: #B5876D;
+    }
+
+    #bars {
+        display: block;
+        width: 60px;
+        height: 60px;
+        z-index: 3;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    /*Changing the direction of flexbox for the call to action buttons*/
+    .cta {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .cta div {
+        width: 40%;
+        margin: 4px auto;
+    }
+
+    .cta a {
+        width: 100%;
+    }
+
+    .slider {
+        width: 95%;
+        max-height: 600px;
+    }
+
+    .slider div {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        padding: 4px;
+    }
+
+    #book1, #book2, #book3, #author1, #author2, #author3, #suggestions1, #suggestions2, #suggestions3 {
+        width: 100%;
+        flex-direction: column;
+        align-content: start;
+    }
+
+    #author1 {
+        margin-top: 0;
+    }
+
+    #suggestions1 div, #suggestions2 div, #suggestions3 div {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    #suggestions1 a, #suggestions2 a, #suggestions3 a {
+        height: 150px;
+        margin: auto;
+    }
+
+    .sliderButtons {
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        text-align: left;
+        font-size: 10px;
+        width: 95%;
+    }
+
+    .book-cover {
+        width: 180px;
+        height: 300px;
+    }
+
+    footer div {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .form {
+        width: 130%;
+    }
+
+    .submit {
+        width: 50%;
+        right: -29%;
+    }
+
+    .footer-links {
+
+        width: 100%;
+    }
+
+    .footer-links ul {
+        width: 100%;
+    }
+
+    .social {
+        margin-top: 10px;
+        justify-content: start;
+    }
+
+    .books {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .books div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sort {
+        justify-content: center;
+        margin: auto;
+    }
+
+    .alphabetic {
+        display: none;
+    }
+
+    .book {
+        width: 150px;
+        height: 300px;
+    }
+
+    .amazon {
+        width: 100%;
+    }
+
+    .amazon a {
+        width: 90%;
+        margin: auto;
+    }
+
+    .book-info {
+        width: 50%;
+    }
+
+    #new-review {
+        width: 300px;
+        height: 20px;
+    }
+
+    .add-comment {
+        width: 100%;
+        position: relative;
+    }
+
+    .add-comment img {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 20%;
+        left: -20px;
+    }
+
+    .all-comments {
+        width: 500px;
+    }
+
+    .all-comments img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .comment {
+        height: 60px;
+        margin-left: 10px;
+    }
+
+    .quiz {
+        width: 100%;
+    }
+
+    #recommendation div {
+        width: 60%;
+    }
+
+    .inspiration {
+        align-items: start;
+        height: 200px;
+        overflow: scroll;
+        padding: 8px 4px;
+    }
+
+    .inspiration img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .inspiration-image img {
+        height: 120px;
+        width: 120px;
+    }
+
+
+}
+
+/*TABLET BREAKPOINT*/
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 0;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+
+    a.nav-link {
+        color: #B5876D;
+    }
+
+    #bars {
+        display: block;
+        width: 60px;
+        height: 60px;
+        z-index: 3;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    .cta {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .cta div {
+        width: 20%;
+        margin: auto;
+    }
+
+    .cta a {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .slider {
+        width: 95%;
+        max-height: 600px;
+    }
+
+    .slider div {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        padding: 4px;
+    }
+
+    #book1, #book2, #book3, #author1, #author2, #author3, #suggestions1, #suggestions2, #suggestions3 {
+        width: 100%;
+        flex-direction: column;
+        align-content: start;
+    }
+
+    #author1 {
+        margin-top: 0;
+    }
+
+    #suggestions1 div, #suggestions2 div, #suggestions3 div {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    #suggestions1 a, #suggestions2 a, #suggestions3 a {
+        height: 150px;
+        margin: auto;
+    }
+
+    .sliderButtons {
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        text-align: left;
+        font-size: 14px;
+        width: 95%;
+    }
+
+    .book-cover {
+        width: 180px;
+        height: 300px;
+    }
+
+    footer h2 {
+        text-align: center;
+    }
+
+    footer div {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .form {
+        width: 130%;
+    }
+
+    .submit {
+        width: 50%;
+        right: -29%;
+    }
+
+    .footer-links {
+
+        width: 100%;
+    }
+
+    .footer-links ul {
+        width: 100%;
+    }
+
+    .social {
+        margin-top: 10px;
+        justify-content: start;
+    }
+
+    .books {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .books div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sort {
+        justify-content: center;
+    }
+
+    .search-field {
+        width: 70%;
+    }
+
+    .alphabetic {
+        display: none;
+    }
+
+    .book {
+        width: 90%;
+        margin: 0 auto;
+        height: 300px;
+    }
+
+    .amazon {
+        width: 90%;
+    }
+
+    .amazon a {
+        width: 85%;
+        margin: auto;
+    }
+
+
+    .book-info {
+        width: 50%;
+    }
+
+    #new-review {
+        width: 400px;
+        height: 20px;
+    }
+
+    .add-comment {
+        width: 100%;
+        position: relative;
+    }
+
+    .add-comment img {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 20%;
+    }
+
+    .all-comments {
+        width: 600px;
+        padding: 25px 10px;
+    }
+
+    .all-comments img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .comment {
+        height: 60px;
+        margin-left: 10px;
+    }
+
+    .quiz {
+        width: 100%;
+    }
+
+    #recommendation div {
+        width: 80%;
+        text-align: center;
+    }
+
+    .inspiration {
+        align-items: start;
+        height: 200px;
+        overflow: scroll;
+        padding: 8px 4px;
+    }
+
+    .inspiration img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .inspiration-image img {
+        height: 120px;
+        width: 120px;
+    }
+}

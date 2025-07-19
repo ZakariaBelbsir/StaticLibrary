@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/bookshelves.png">
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/ebfd83f5ba.js" crossorigin="anonymous"></script>
+
+    <title>Home</title>
+</head>
+<body>
+    <header id="home-header">
+        <!--Nav bar-->
+        <nav class="d-flex justify-between align-center">
+            <i class="fa-solid fa-bars text-white" title="menu icon" id="bars" onclick="toggleNav()"></i>
+            <a href="index.html" class="logo col-4 ml-20">
+                <img src="./images/bookshelves.png" alt="bookshelves logo" width="120" height="120">
+            </a>
+            <ul class="nav-items col-4 d-flex justify-between mr-20" id="nav-items">
+                <li>
+                   <a href="index.html" class="nav-link text-white">Home</a>
+                </li>
+                <li>
+                    <a href="library.html" class="nav-link text-white">Library</a>
+                </li>
+                <li>
+                    <a href="inspiration.html" class="nav-link text-white">Inspiration</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-link text-white">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <!--Banner with call to action buttons-->
+            <section class="hero">
+                <div class="row mt-40">
+                    <h1 class="text-center">Real book reviews by real bookworms</h1>
+                </div>
+                <div class="row d-flex justify-center mt-36 cta">
+                    <div class="col-1 mr-6">
+                        <a href="inspiration.html" class="btn btn-secondary btn-link text-center">
+                            Get inspired
+                        </a>
+                    </div>
+                    <div class="col-1 mx-8">
+                        <a href="library.html" class="btn btn-primary btn-link text-center">
+                            Check our reviews
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--End banner-->
+            <h2 class="text-center mt-12">Featured Books</h2>
+<!--            Featured books sliders containing author information and other books by the same author-->
+<!--            slider 1-->
+            <div class="row slider py-8">
+                <div class="d-flex justify-center align-center" id="book1">
+                    <div class="col-2 mr-20">
+                        <img src="./images/inferno.jpg" alt="inferno by dan brown" class="book-cover">
+                    </div>
+                    <div class="col-5 ml-20">
+                        <p class="text-white">
+                            Harvard professor of symbology Robert Langdon awakens in an Italian hospital,
+                            disoriented and with no recollection of the past thirty-six hours, including the origin of the macabre object hidden in
+                            his belongings. With a relentless female assassin trailing them through Florence, he and his resourceful doctor, Sienna Brooks, are forced to flee.
+                            Embarking on a harrowing journey, they must unravel a series of codes, which are the work of a brilliant scientist whose obsession with the end of the world
+                            is matched only by his passion for one of the most influential masterpieces ever written, Dante Alighieri's The Inferno. <br>
+                            <span><a href="book.html" class="link">Check this book</a></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-center align-center" id="author1">
+                    <div class="col-5 mr-20">
+                        <p class="text-white">
+                            Daniel Gerhard Brown (born June 22, 1964) is an American author best known for his thriller novels,
+                            including the Robert Langdon novels Angels & Demons (2000), The Da Vinci Code (2003), The Lost Symbol (2009), Inferno (2013), and Origin (2017).
+                            His novels are treasure hunts that usually take place over a period of 24 hours.[3] They feature recurring themes of cryptography, art, and conspiracy theories.
+                            His books have been translated into 57 languages and, as of 2012, have sold over 200 million copies. Three of them, Angels & Demons, The Da Vinci Code, and Inferno,
+                            have been adapted into films, while one of them, The Lost Symbol, was adapted into a television show.
+                            <span><a href="https://en.wikipedia.org/wiki/Dan_Brown" target="_blank" class="link">Read More</a></span>
+                        </p>
+                    </div>
+                    <div class="col-2 ml-20">
+                        <img src="images/Dan_Brown.jpg" alt="Dan Brown" class="book-cover">
+                    </div>
+                </div>
+                <div class="row" id="suggestions1">
+                    <div class="col-8 d-flex m-auto">
+                        <a class="mr-6" href="book.html">
+                            <img src="images/davinci-code.jpg" class="book-cover" alt="The Davinci Code by Dan Brown">
+                        </a>
+                        <a href="book.html">
+                            <img src="images/origin.jpg" class="book-cover" alt="Origin by Dan Brown">
+                        </a>
+                        <a class="ml-6" href="book.html">
+                            <img src="images/the-lost-symbol.jpg" class="book-cover" alt="The lost symbol by Dan Brown">
+                        </a>
+                    </div>
+                </div>
+                <div class="sliderButtons">
+                    <button id="slider1-btn1" onclick="bookInfo1()"></button>
+                    <button id="slider1-btn2" onclick="authorInfo1()"></button>
+                    <button id="slider1-btn3" onclick="authorBooks1()"></button>
+                </div>
+            </div>
+<!--            end slider 1-->
+<!--            slider 2-->
+            <div class="row slider mt-10 py-8">
+                <div class="d-flex justify-center align-center" id="book2">
+                    <div class="col-5 mr-20">
+                        <p class="text-white">
+                            A Gentleman in Moscow immerses us in another elegantly drawn era with the story of Count Alexander Rostov.
+                            When, in 1922, he is deemed an unrepentant aristocrat by a Bolshevik tribunal, the count is sentenced to house arrest in the Metropol,
+                            a grand hotel across the street from the Kremlin. Rostov, an indomitable man of erudition and wit, has never worked a day in his life,
+                            and must now live in an attic room while some of the most tumultuous decades in Russian history are unfolding outside the hotel’s doors.
+                            Unexpectedly, his reduced circumstances provide him a doorway into a much larger world of emotional discovery.
+
+                            Brimming with humour, a glittering cast of characters, and one beautifully rendered scene after another,
+                            this singular novel casts a spell as it relates the count’s endeavour to gain a deeper understanding of what it means to be a man of purpose.<br>
+                            <span><a href="book.html" class="link">Check this book</a></span>
+                        </p>
+                    </div>
+                    <div class="col-2 ml-20">
+                        <img src="images/gentleman-in-moscow.jpg" alt="a gentleman in moscow by Amor Towles" class="book-cover">
+                    </div>
+                </div>
+                <div class="d-flex justify-center align-center" id="author2">
+                    <div class="col-2 mr-20">
+                            <img src="images/Amor_Towles.jpg" alt="Amor Towles" class="book-cover">
+                        </div>
+                    <div class="col-5 ml-20">
+                            <p class="text-white">
+                                Amor Towles (born 1964) is an American novelist.
+                                He is best known for his bestselling novels Rules of Civility (2011), A Gentleman in Moscow (2016), and The Lincoln Highway (2021).
+                                <span><a href="https://en.wikipedia.org/wiki/Amor_Towles" target="_blank" class="link">Read more</a></span>
+                            </p>
+                        </div>
+                </div>
+                <div class="d-flex justify-between align-center " id="suggestions2">
+                    <div class="col-8 d-flex m-auto">
+                        <a class="mr-6" href="book.html">
+                            <img src="images/rules-of-civility.jpg" class="book-cover" alt="Rules of Civility by Amor Towles">
+                        </a>
+                        <a href="book.html">
+                            <img src="images/lincoln-highway.jpg" class="book-cover" alt="The Lincoln Highway by Amor Towles">
+                        </a>
+                        <a class="ml-6" href="book.html">
+                            <img src="images/you-have-arrived-at-your-destination.jpg" class="book-cover" alt="You have arrived at your destination by Amor Towles">
+                        </a>
+                    </div>
+                </div>
+                <div class="sliderButtons">
+                    <button id="slider2-btn1" onclick="bookInfo2()"></button>
+                    <button id="slider2-btn2" onclick="authorInfo2()"></button>
+                    <button id="slider2-btn3" onclick="authorBooks2()"></button>
+                </div>
+            </div>
+<!--            end slider 2-->
+<!--            slider 3-->
+            <div class="row slider mt-10 mb-10 py-8">
+                <div class="d-flex justify-center align-center mt-10 mb-12" id="book3">
+                    <div class="col-2 mr-20">
+                        <img src="images/murderontheorientexpress.jpeg" alt="murder on the orient express by agatha christie" class="book-cover">
+                    </div>
+                    <div class="col-5 ml-20">
+                        <p class="text-white">
+                            Just after midnight, a snowdrift stops the famous Orient Express in its tracks as it travels through the mountainous Balkans.
+                            The luxurious train is surprisingly full for the time of the year but, by the morning, it is one passenger fewer.
+                            An American tycoon lies dead in his compartment, stabbed a dozen times, his door locked from the inside.
+
+                            One of the passengers is none other than detective Hercule Poirot. On vacation.
+
+                            Isolated and with a killer on board, Poirot must identify the murderer—in case he or she decides to strike again.<br>
+                            <span><a href="book.html" class="link">Check this book</a></span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-center align-center" id="author3">
+                    <div class="col-5 mr-20">
+                        <p class="text-white">
+                            Dame Agatha Mary Clarissa Christie, Lady Mallowan, DBE (née Miller; 15 September 1890 – 12 January 1976)
+                            was an English writer known for her 66 detective novels and 14 short story collections,
+                            particularly those revolving around fictional detectives Hercule Poirot and Miss Marple. She also wrote the world's longest-running play,
+                            the murder mystery The Mousetrap, which has been performed in the West End since 1952. A writer during the "Golden Age of Detective Fiction",
+                            Christie has been called the "Queen of Crime". She also wrote six novels under the pseudonym Mary Westmacott.
+                            In 1971, she was made a Dame (DBE) by Queen Elizabeth II for her contributions to literature.
+                            Guinness World Records lists Christie as the best-selling fiction writer of all time, her novels having sold more than two billion copies.
+                            <span><a href="https://en.wikipedia.org/wiki/Agatha_Christie" target="_blank" class="link">Read More</a></span>
+                        </p>
+                    </div>
+                    <div class="col-2 ml-20">
+                        <img src="images/Agatha_Christie.png" alt="Agatha Christie" class="book-cover">
+                    </div>
+                </div>
+
+                <div class="d-flex justify-between align-center " id="suggestions3">
+                    <div class="col-8 d-flex m-auto">
+                        <a class="mr-6" href="book.html">
+                            <img src="images/and-then-there-were-none.jpg" class="book-cover" alt="And then there were none by Agatha Christie">
+                        </a>
+                        <a href="book.html">
+                            <img src="images/death-on-the-nile.jpg" class="book-cover" alt="Death on the Nile by Agatha Christie">
+                        </a>
+                        <a class="ml-6" href="book.html">
+                            <img src="images/the-mysterious-affair-at-styles.jpg" class="book-cover" alt="The mysterious affair at styles">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sliderButtons">
+                    <button id="slider3-btn1" onclick="bookInfo3()"></button>
+                    <button id="slider3-btn2" onclick="authorInfo3()"></button>
+                    <button id="slider3-btn3" onclick="authorBooks3()"></button>
+                </div>
+            </div>
+
+<!--            end slider 3-->
+        </div>
+    </main>
+    <footer class="px-10 py-8">
+        <div class="row d-flex justify-between">
+            <div class="col-4">
+                <img src="./images/bookshelves.png" alt="bookshelves logo" class="footer-logo" width="269" height="284">
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <h2 class="footer-title ml-20">Keep up with our latest additions</h2>
+                </div>
+                <div class="row">
+                    <form action="#">
+                        <div class="d-flex form justify-center">
+                            <input type="text" placeholder="your e-mail" class="form-field py-2 px-8">
+                            <button type="submit" class="submit btn btn-primary">Subscribe now</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="row mt-10 d-flex align-end footer-links">
+                    <ul class="col-4">
+                        <li class="mt-4">
+                            <a href="index.html" class="nav-link text-white">Home</a>
+                        </li>
+                        <li class="mt-4">
+                            <a href="library.html" class="nav-link text-white">Library</a>
+                        </li>
+                        <li class="mt-4">
+                            <a href="inspiration.html" class="nav-link text-white">Inspiration</a>
+                        </li>
+                        <li class="mt-4">
+                            <a href="contact.html" class="nav-link text-white">Contact</a>
+                        </li>
+                        <li class="mt-4">
+                            <span  class="nav-link text-white" id="indexRef" onclick="showIndexRef()">References</span>
+                        </li>
+                    </ul>
+                    <ul class="col-6 social d-flex justify-end">
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img src="./images/icons8-facebook-48.png" alt="facebook logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com" target="_blank">
+                                <img src="./images/icons8-instagram-48.png" alt="instagram logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com" target="_blank">
+                                <img src="./images/icons8-youtube-48.png" alt="youtube logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-12" id="indexRefList">
+            <p class="text-white font-regular text-center">
+                A gentleman in Moscow. (n.d.). https://www.amazon.co.uk/Gentleman-Moscow-Amor-Towles/dp/0099558785/ref=sr_1_1?crid=3MCFC6800RJ6E&keywords=a+gentleman+in+moscow&qid=1679918240&sprefix=a+gentleman+in+moscow%2Caps%2C109&sr=8-1
+                <br>
+                A gentleman in moscow. (n.d.). Goodreads. https://www.goodreads.com/book/show/34066798-a-gentleman-in-moscow?from_search=true&from_srp=true&qid=pTJ4MbWNko&rank=1
+                <br>
+                Agatha Christie. (n.d.). https://en.wikipedia.org/wiki/Agatha_Christie <br>
+                Amor Towles. (n.d.). https://en.wikipedia.org/wiki/Amor_Towles <br>
+                And then there were none. (n.d.). https://www.goodreads.com/book/show/16299.And_Then_There_Were_None?from_search=true&from_srp=true&qid=VsKuPpXK51&rank=5
+                <br>
+                Dan Brown. (n.d.). https://en.wikipedia.org/wiki/Dan_Brown <br>
+                Dan Brown Inferno. (n.d.). Amazon. https://www.amazon.co.uk/Inferno-Robert-Langdon-Book-4/dp/0552169587
+                <br>
+                Death on the Nile. (n.d.). https://www.goodreads.com/book/show/131359.Death_on_the_Nile?from_search=true&from_srp=true&qid=EK6xIMRhNu&rank=1
+                <br>
+                Inferno (Robert Langdon). (n.d.). Goodreads. https://www.goodreads.com/book/show/17212231-inferno?from_search=true&from_srp=true&qid=GwLI0JqEi7&rank=3
+                <br>
+                Murder on the orient express. (n.d.). https://www.amazon.co.uk/Murder-Orient-Express-Poirot-Christie/dp/0008226660/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1679920106&sr=8-1
+                <br>
+                Murder on the Orient Express (Hercule Poirot, #10). (n.d.). Goodreads. https://www.goodreads.com/book/show/853510.Murder_on_the_Orient_Express?from_search=true&from_srp=true&qid=Ja7dkZOmFT&rank=1
+                <br>
+                Origin. (n.d.). https://www.amazon.co.uk/Origin-Robert-Langdon-Book-5/dp/0552174165/ref=pd_bxgy_img_sccl_1/259-6761077-7517530?pd_rd_w=YiG4l&content-id=amzn1.sym.79b812bf-5c8b-4c0c-851c-784423adaff5&pf_rd_p=79b812bf-5c8b-4c0c-851c-784423adaff5&pf_rd_r=WACHSZ78MHZNRBCMA248&pd_rd_wg=bUXhO&pd_rd_r=6eb85f93-8934-47fd-847d-2628ba58cdc8&pd_rd_i=0552174165&psc=1
+                <br>
+                Rules of civility. (n.d.). https://www.goodreads.com/book/show/10054335-rules-of-civility?ac=1&from_search=true&qid=FLHwB1VYVG&rank=1
+                <br>
+                The Da Vinci Code. (n.d.). https://www.amazon.co.uk/Vinci-Code-Robert-Langdon-Book/dp/0552159719/ref=d_pd_sbs_sccl_3_4/259-6761077-7517530?pd_rd_w=wv4M5&content-id=amzn1.sym.3c43869a-89e8-4710-9992-f2840aad13e1&pf_rd_p=3c43869a-89e8-4710-9992-f2840aad13e1&pf_rd_r=P6ZRCKAT4S6DSG12J9K9&pd_rd_wg=qB6rA&pd_rd_r=91843081-049c-4213-8ac6-861130b3ec48&pd_rd_i=0552159719&psc=1
+                <br>
+                The lincoln highway. (n.d.). https://www.goodreads.com/book/show/57109107-the-lincoln-highway?ac=1&from_search=true&qid=AKNm0FInl3&rank=1
+                <br>
+                The lost symbol. (n.d.). https://www.amazon.co.uk/Lost-Symbol-Robert-Langdon/dp/0552149527/ref=pd_bxgy_img_sccl_2/259-6761077-7517530?pd_rd_w=gGKF5&content-id=amzn1.sym.79b812bf-5c8b-4c0c-851c-784423adaff5&pf_rd_p=79b812bf-5c8b-4c0c-851c-784423adaff5&pf_rd_r=KN4K33D2PWJMTKYF2CD2&pd_rd_wg=5sbyW&pd_rd_r=7fc75519-42c0-4d35-bba2-0b2c0f128af7&pd_rd_i=0552149527&psc=1
+                <br>
+                The mysterious affair at styles. (n.d.). https://www.goodreads.com/book/show/52843028-the-mysterious-affair-at-styles?from_search=true&from_srp=true&qid=iiuP6AttEk&rank=1
+                <br>
+                You have arrived a your destination. (n.d.). https://www.goodreads.com/book/show/49665863-you-have-arrived-at-your-destination?ac=1&from_search=true&qid=HgtqfxSExV&rank=4
+                <br>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

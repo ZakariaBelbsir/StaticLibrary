@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/bookshelves.png">
+    <script src="https://kit.fontawesome.com/ebfd83f5ba.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+    <title>Quiz</title>
+</head>
+<body>
+<header>
+    <!--Nav bar-->
+    <nav class="d-flex justify-between align-center">
+        <i class="fa-solid fa-bars text-white" title="menu icon" id="bars" onclick="toggleNav()"></i>
+        <a href="index.html" class="logo col-4 ml-20">
+            <img src="./images/bookshelves.png" alt="bookshelves logo" width="120" height="120">
+        </a>
+        <ul class="nav-items col-4 d-flex justify-between mr-20" id="nav-items">
+            <li>
+                <a href="index.html" class="nav-link text-white">Home</a>
+            </li>
+            <li>
+                <a href="library.html" class="nav-link text-white">Library</a>
+            </li>
+            <li>
+                <a href="inspiration.html" class="nav-link text-white">Inspiration</a>
+            </li>
+            <li>
+                <a href="contact.html" class="nav-link text-white">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="row mt-12">
+        <h1 class="text-black text-center">
+            Welcome to our quiz page!
+        </h1>
+    </div>
+    <div class="row mb-2">
+        <p class="text-black text-center font-regular">
+            Here you can take our quick quiz to find your next read in case you can’t decide.
+        </p>
+    </div>
+    <div class="row d-flex justify-center mt-12">
+        <div class="justify-center flex-column mb-12 col-6 quiz px-8 py-8">
+            <form action="#">
+                <div class="col-8">
+                    <p class="font-regular">How many books have you read?</p>
+                    <div class="col-4 d-flex align-center mt-4 mb-4">
+                        <input type="radio" id="numOfBooks1" class="radio mr-6" name="numOfBooks"
+                               onclick="showGenres()">
+                        <label for="numOfBooks1" class="col-6">0-10</label>
+                    </div>
+                    <div class="col-4 d-flex align-center mt-4 mb-4">
+                        <input type="radio" id="numOfBooks2" class="radio mr-6" name="numOfBooks"
+                               onclick="showGenres()">
+                        <label for="numOfBooks2" class="col-6">11-50</label>
+                    </div>
+                    <div class="col-4 d-flex align-center mt-4 mb-4">
+                        <input type="radio" id="numOfBooks3" class="radio mr-6" name="numOfBooks"
+                               onclick="showGenres()">
+                        <label for="numOfBooks3" class="col-6">51-100</label>
+                    </div>
+                    <div class="col-4 d-flex align-center mt-4 mb-4">
+                        <input type="radio" id="numOfBooks4" class="radio mr-6" name="numOfBooks"
+                               onclick="showGenres()">
+                        <label for="numOfBooks4" class="col-6">Over 100</label>
+                    </div>
+
+                </div>
+
+                <div class="col-8" id="genres">
+                    <p class="font-regular">What's your favourite genre from the following?</p>
+                    <div class="col-4 d-flex align-center mt-4 mb-4">
+                        <input type="radio" id="genre1" class="radio mr-6" name="genre" onclick="showAuthors()">
+                        <label for="genre1" class="col-6">Thriller</label>
+                    </div>
+                    <div class="col-4 d-flex align-center mt-4 mb-4">
+                        <input type="radio" id="genre2" class="radio mr-6" name="genre" onclick="showAuthors()">
+                        <label for="genre2" class="col-6">Mystery</label>
+                    </div>
+                    <div class="col-4 d-flex align-center mt-4 mb-4">
+                        <input type="radio" id="genre3" class="radio mr-6" name="genre" onclick="showAuthors()">
+                        <label for="genre3" class="col-6">Self Help</label>
+                    </div>
+                    <div class="col-4 d-flex align-center mt-4 mb-4">
+                        <input type="radio" id="genre4" class="radio mr-6" name="genre" onclick="showAuthors()">
+                        <label for="genre4" class="col-6">Biography</label>
+                    </div>
+
+                </div>
+                <div class="col-8" id="authors">
+                    <p class="font-regular">Who's your favourite author from the following?</p>
+                    <div class="col-4 d-flex align-center mt-4 mb-4">
+                        <input type="radio" id="favAuthor1" class="radio mr-6" name="author"
+                               onclick="showRecommendation()">
+                        <label for="favAuthor1" class="col-6">Agatha Christie</label>
+                    </div>
+                    <div class="col-4 d-flex align-center mt-4 mb-4">
+                        <input type="radio" id="favAuthor2" class="radio mr-6" name="author"
+                               onclick="showRecommendation()">
+                        <label for="favAuthor2" class="col-6">J.K. Rowling</label>
+                    </div>
+                    <div class="col-4 d-flex align-center mt-4 mb-4">
+                        <input type="radio" id="favAuthor3" class="radio mr-6" name="author"
+                               onclick="showRecommendation()">
+                        <label for="favAuthor3" class="col-6">Mark Manson</label>
+                    </div>
+                    <div class="col-4 d-flex align-center mt-4 mb-4">
+                        <input type="radio" id="favAuthor4" class="radio mr-6" name="author"
+                               onclick="showRecommendation()">
+                        <label for="favAuthor4" class="col-6">James Clear</label>
+                    </div>
+                </div>
+            </form>
+            <div class="row d-flex flex-column mb-12" id="recommendation">
+                <div class="col-5 m-auto">
+                    <h2>Our recommendation</h2>
+                </div>
+                <div class="col-5 m-auto">
+                    <a href="book.html">
+                        <img src="images/death-on-the-nile.jpg" alt="Death on the Nile by Agatha Christie"
+                             class="book-cover">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="px-10 py-8">
+    <div class="row d-flex justify-between">
+        <div class="col-4">
+            <img src="./images/bookshelves.png" alt="bookshelves logo" class="footer-logo" width="269" height="284">
+        </div>
+        <div class="col-8">
+            <div class="row">
+                <h2 class="footer-title ml-20">Keep up with our latest additions</h2>
+            </div>
+            <div class="row">
+                <form action="#">
+                    <div class="d-flex form justify-center">
+                        <input type="text" placeholder="your e-mail" class="form-field py-2 px-8">
+                        <button type="submit" class="submit btn btn-primary">Subscribe now</button>
+                    </div>
+                </form>
+            </div>
+            <div class="row mt-10 d-flex align-end footer-links">
+                <ul class="col-4">
+                    <li class="mt-4">
+                        <a href="index.html" class="nav-link text-white">Home</a>
+                    </li>
+                    <li class="mt-4">
+                        <a href="library.html" class="nav-link text-white">Library</a>
+                    </li>
+                    <li class="mt-4">
+                        <a href="inspiration.html" class="nav-link text-white">Inspiration</a>
+                    </li>
+                    <li class="mt-4">
+                        <a href="contact.html" class="nav-link text-white">Contact</a>
+                    </li>
+                    <li class="mt-4">
+                        <span class="nav-link text-white" id="quizRef" onclick="showQuizRef()">References</span>
+                    </li>
+                </ul>
+                <ul class="col-6 social d-flex justify-end">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./images/icons8-facebook-48.png" alt="facebook logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="./images/icons8-instagram-48.png" alt="instagram logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="./images/icons8-youtube-48.png" alt="youtube logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row pt-12" id="quizRefList">
+        <p class="text-white font-regular">
+            Death on the Nile. (n.d.).
+            https://www.goodreads.com/book/show/131359.Death_on_the_Nile?from_search=true&from_srp=true&qid=EK6xIMRhNu&rank=1
+            <br>
+        </p>
+    </div>
+</footer>
+</body>
+</html>

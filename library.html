@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ebfd83f5ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/bookshelves.png">
+    <script src="js/script.js"></script>
+    <title>Library</title>
+</head>
+<body>
+<header>
+    <!--Nav bar-->
+    <nav class="d-flex justify-between align-center">
+        <i class="fa-solid fa-bars text-white" title="menu icon" id="bars" onclick="toggleNav()"></i>
+        <a href="index.html" class="logo col-4 ml-20">
+            <img src="./images/bookshelves.png" alt="bookshelves logo" width="120" height="120">
+        </a>
+        <ul class="nav-items col-4 d-flex justify-between mr-20" id="nav-items">
+            <li>
+                <a href="index.html" class="nav-link text-white">Home</a>
+            </li>
+            <li>
+                <a href="library.html" class="nav-link text-white">Library</a>
+            </li>
+            <li>
+                <a href="inspiration.html" class="nav-link text-white">Inspiration</a>
+            </li>
+            <li>
+                <a href="contact.html" class="nav-link text-white">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <!--        Search bar-->
+        <div class="row py-8 d-flex justify-end sort">
+            <div class="col-2 mr-20">
+                <form action="#">
+                    <div class="search-field">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass search-icon" title="search icon"></i>
+                        <input type="text" class="py-2 px-8 search-bar" placeholder="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--        End search bar-->
+
+        <!--        Find books by alphabet-->
+        <div class="row py-2">
+            <div class="col-8 m-auto">
+                <ul class="d-flex justify-between alphabetic">
+                    <li><a href="">a</a></li>
+                    <li><a href="">b</a></li>
+                    <li><a href="">c</a></li>
+                    <li><a href="">d</a></li>
+                    <li><a href="">e</a></li>
+                    <li><a href="">f</a></li>
+                    <li><a href="">g</a></li>
+                    <li><a href="">h</a></li>
+                    <li><a href="">i</a></li>
+                    <li><a href="">j</a></li>
+                    <li><a href="">k</a></li>
+                    <li><a href="">l</a></li>
+                    <li><a href="">m</a></li>
+                    <li><a href="">n</a></li>
+                    <li><a href="">o</a></li>
+                    <li><a href="">p</a></li>
+                    <li><a href="">q</a></li>
+                    <li><a href="">r</a></li>
+                    <li><a href="">s</a></li>
+                    <li><a href="">t</a></li>
+                    <li><a href="">u</a></li>
+                    <li><a href="">v</a></li>
+                    <li><a href="">w</a></li>
+                    <li><a href="">x</a></li>
+                    <li><a href="">y</a></li>
+                    <li><a href="">z</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--        End alphabet sorting-->
+
+        <div class="row py-8">
+            <div class="col-10 d-flex m-auto justify-around books">
+                <div>
+                    <a href="book.html">
+                        <img src="./images/deep-work.jpg" class="book-cover" alt="Deep work book">
+                    </a>
+                </div>
+                <div>
+                    <a href="book.html">
+                        <img src="./images/the-art-of-war.jpg" class="book-cover" alt="The art of War by Sun Tzu">
+                    </a>
+                </div>
+                <div>
+                    <a href="book.html">
+                        <img src="./images/atomic-habits.jpg" alt="Atomic Habits" class="book-cover">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row py-8">
+            <div class="col-10 d-flex m-auto justify-around books">
+                <div>
+                    <a href="book.html">
+                        <img src="./images/inferno.jpg" alt="Inferno by Dan Brown" class="book-cover">
+                    </a>
+                </div>
+                <div>
+                    <a href="book.html">
+                        <img src="./images/the-book-of-five-rings.jpg" alt="The book of Five Rings by Miamoto Musashi"
+                             class="book-cover">
+                    </a>
+                </div>
+                <div>
+                    <a href="book.html">
+                        <img src="./images/the-silent-patient.jpg" alt="The Silent Patient" class="book-cover">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row py-8">
+            <div class="col-10 d-flex m-auto justify-around books">
+                <div>
+                    <a href="book.html">
+                        <img src="./images/murderontheorientexpress.jpeg" class="book-cover"
+                             alt="Murder on The Orient Express by Agatha Christie">
+                    </a>
+                </div>
+                <div>
+                    <a href="book.html">
+                        <img src="./images/gentleman-in-moscow.jpg" class="book-cover" alt="A gentleman in Moscow">
+                    </a>
+                </div>
+                <div>
+                    <a href="book.html">
+                        <img src="./images/ikigai.jpg" alt="Ikigai" class="book-cover">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--        Nav links-->
+        <div class="row d-flex justify-end align-center py-8">
+            <a href="#">
+                <i class="fa-solid fa-circle-chevron-left text-black" title="previous page"></i>
+            </a>
+            <ul class="d-flex justify-around page-nav">
+                <li class="mr-6 ml-6"><a href="">1</a></li>
+                <li class="mr-6"><a href="">2</a></li>
+                <li class="mr-6"><a href="">3</a></li>
+            </ul>
+            <a href="#">
+                <i class="fa-solid fa-circle-chevron-right text-black" title="next page"></i>
+            </a>
+
+        </div>
+        <!--        end nav links-->
+    </div>
+</main>
+<footer class="px-10 py-8">
+    <div class="row d-flex justify-between">
+        <div class="col-4">
+            <img src="./images/bookshelves.png" alt="bookshelves logo" class="footer-logo" width="269" height="284">
+        </div>
+        <div class="col-8">
+            <div class="row">
+                <h2 class="footer-title ml-20">Keep up with our latest additions</h2>
+            </div>
+            <div class="row">
+                <form action="#">
+                    <div class="d-flex form justify-center">
+                        <input type="text" placeholder="your e-mail" class="form-field py-2 px-8">
+                        <button type="submit" class="submit btn btn-primary">Subscribe now</button>
+                    </div>
+                </form>
+            </div>
+            <div class="row mt-10 d-flex align-end footer-links">
+                <ul class="col-4">
+                    <li class="mt-4">
+                        <a href="index.html" class="nav-link text-white">Home</a>
+                    </li>
+                    <li class="mt-4">
+                        <a href="library.html" class="nav-link text-white">Library</a>
+                    </li>
+                    <li class="mt-4">
+                        <a href="inspiration.html" class="nav-link text-white">Inspiration</a>
+                    </li>
+                    <li class="mt-4">
+                        <a href="contact.html" class="nav-link text-white">Contact</a>
+                    </li>
+                    <li class="mt-4">
+                        <span class="nav-link text-white" id="libraryRef" onclick="showLibraryRef()">References</span>
+                    </li>
+                </ul>
+                <ul class="col-6 social d-flex justify-end">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./images/icons8-facebook-48.png" alt="facebook logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="./images/icons8-instagram-48.png" alt="instagram logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="./images/icons8-youtube-48.png" alt="youtube logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-12" id="libraryRefList">
+        <p class="text-white font-regular">
+            A gentleman in Moscow. (n.d.).
+            https://www.amazon.co.uk/Gentleman-Moscow-Amor-Towles/dp/0099558785/ref=sr_1_1?crid=3MCFC6800RJ6E&keywords=a+gentleman+in+moscow&qid=1679918240&sprefix=a+gentleman+in+moscow%2Caps%2C109&sr=8-1
+            <br>
+            Atomic Habits. (n.d.). Amazon.
+            https://www.amazon.co.uk/Atomic-Habits-Proven-Build-Break/dp/1847941834/ref=pd_bxgy_img_sccl_1/259-7882550-1858737?pd_rd_w=Yp4YP&content-id=amzn1.sym.adaa6e74-ba24-420a-83eb-f68e38f864e8&pf_rd_p=adaa6e74-ba24-420a-83eb-f68e38f864e8&pf_rd_r=KFNDXEJMA039APFF2EN2&pd_rd_wg=TXpUO&pd_rd_r=8b28b609-78b6-43e0-ad08-98696f649468&pd_rd_i=1847941834&psc=1
+            <br>
+            Dan Brown Inferno. (n.d.). Amazon. https://www.amazon.co.uk/Inferno-Robert-Langdon-Book-4/dp/0552169587 <br>
+            Deep Work. (n.d.). Amazon.
+            https://www.amazon.co.uk/Deep-Work-Focused-Success-Distracted/dp/0349411905/ref=sxin_16_mbs_w_global_sims?content-id=amzn1.sym.63fd987c-dcc3-4020-9e89-858f0107093c%3Aamzn1.sym.63fd987c-dcc3-4020-9e89-858f0107093c&crid=2EXV1NVGMADP&cv_ct_cx=atomic+habits&keywords=atomic+habits&pd_rd_i=0349411905&pd_rd_r=13460a5b-dc9f-43af-9f0a-c701902c18e5&pd_rd_w=3Emmj&pd_rd_wg=axM8s&pf_rd_p=63fd987c-dcc3-4020-9e89-858f0107093c&pf_rd_r=W8DA6HAJRQ0CPZXPGFPW&qid=1679996341&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=atomic+habits%2Caps%2C123&sr=1-1-df5ca5bf-512a-4fb5-8a5c-4c0089c73372
+            <br>
+            Ikigai. (n.d.). Amazon.
+            https://www.amazon.co.uk/Ikigai-Japanese-secret-long-happy/dp/178633089X/ref=sr_1_1?crid=EVU7AA2R1VFW&keywords=ikigai&qid=1679996483&sprefix=ikigai%2Caps%2C161&sr=8-1
+            <br>
+            Murder on the orient express. (n.d.).
+            https://www.amazon.co.uk/Murder-Orient-Express-Poirot-Christie/dp/0008226660/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1679920106&sr=8-1
+            <br>
+            The art of war. (n.d.). Amazon.
+            https://www.amazon.co.uk/Art-War-Collins-Classics/dp/0007420129/ref=sr_1_1_sspa?crid=3H7AQ8VQMJ4X0&keywords=the+art+of+war&qid=1679996382&sprefix=the+art+of+wa%2Caps%2C161&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1
+            <br>
+            The silent patient. (n.d.). Amazon.
+            https://www.amazon.co.uk/Silent-Patient-Alex-Michaelides/dp/1409181634/ref=sr_1_1?crid=256QA7F5JP5DX&keywords=the+silent+patient&qid=1679996463&sprefix=the+silent+patient%2Caps%2C143&sr=8-1
+            <br>
+
+        </p>
+    </div>
+</footer>
+</body>
+</html>

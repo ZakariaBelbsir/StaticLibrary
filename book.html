@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/bookshelves.png">
+    <script src="https://kit.fontawesome.com/ebfd83f5ba.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <title>Atomic Habits</title>
+</head>
+<body>
+<header>
+    <!--Nav bar-->
+    <nav class="d-flex justify-between align-center">
+        <i class="fa-solid fa-bars text-white" title="menu icon" id="bars" onclick="toggleNav()"></i>
+        <a href="index.html" class="logo col-4 ml-20">
+            <img src="./images/bookshelves.png" alt="bookshelves logo" width="120" height="120">
+        </a>
+        <ul class="nav-items col-4 d-flex justify-between mr-20" id="nav-items">
+            <li>
+                <a href="index.html" class="nav-link text-white">Home</a>
+            </li>
+            <li>
+                <a href="library.html" class="nav-link text-white">Library</a>
+            </li>
+            <li>
+                <a href="inspiration.html" class="nav-link text-white">Inspiration</a>
+            </li>
+            <li>
+                <a href="contact.html" class="nav-link text-white">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <div class="row d-flex m-auto mt-12 mb-12 justify-around">
+            <div class="col-3 d-flex align-center flex-column ">
+                <img src="./images/atomic-habits.jpg" alt="Atomic habits by James Clear" class="book" width="399"
+                     height="595">
+                <div class="col-5 mt-4 amazon">
+                    <a href="https://www.amazon.co.uk/Atomic-Habits-Proven-Build-Break/dp/1847941834/ref=asc_df_1847941834?tag=bingshoppinga-21&linkCode=df0&hvadid=80470564181935&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=&hvtargid=pla-4584070139067280&psc=1"
+                       target="_blank" class="btn btn-primary btn-link text-center">
+                        Buy on Amazon
+                    </a>
+                </div>
+
+            </div>
+            <aside class="col-7">
+                <div class="row">
+                    <h1 class="text-black book-title">Atomic Habits: Tiny Changes, Remarkable Results</h1>
+                </div>
+
+                <div class="row">
+                    <div class="col-3 mb-4 book-info">
+                        <p class="font-regular">
+                            Author: James Clear <br>
+                            Published: 2018
+                            <br>
+                            <i class="fa fa-star star" title="star rating"></i>
+                            <i class="fa fa-star star" title="star rating"></i>
+                            <i class="fa fa-star star" title="star rating"></i>
+                            <i class="fa fa-star star" title="star rating"></i>
+                            <i class="fa fa-star star" title="star rating"></i>
+                        </p>
+                    </div>
+                    <div class="col-10">
+                        <p class="font-regular mb-4">
+                            No matter your goals, Atomic Habits offers a proven framework for improving-everyday. James
+                            Clear, one of the world’s leading
+                            experts on habit formation, reveals practical strategies that will teach you exactly how to
+                            form good habits, break bad ones, and
+                            master the tiny behaviours that lead to remarkable results.
+                        </p>
+                        <p class="font-regular mt-4">
+                            If you’re having trouble changing your habits, the problem isn’t you. The problem is your
+                            system. Bad habits repeat themselves again
+                            and again because ou don’t want to change, but because you have the wrong system for change.
+                            You do not rise to the level of your
+                            goals. You fall to the level of your systems. Here, you’ll get a proven system that can take
+                            you to new heights.
+                        </p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <hr class="mt-36 mb-12">
+    <section>
+        <div class="row mt-12 mb-12">
+            <h2 class="text-black text-center">Leave a Comment</h2>
+            <div class="row">
+                <div class="col-8 d-flex justify-center align-center add-comment">
+                    <div class="col-2">
+                        <img src="./images/avatar1.jpg" alt="Profile Picture" class="avatar" width="119" height="119">
+                    </div>
+                    <form action="#">
+                        <div class="col-8">
+                            <textarea cols="50" rows="4" id="new-review" class="py-8 px-8"></textarea>
+                        </div>
+                        <div class="row d-flex justify-end mt-4">
+                            <button type="submit" class="btn btn-primary">Add comment</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="row mb-12">
+            <div class="col-6 m-auto all-comments py-20">
+                <div class="row d-flex justify-around review align-center py-2">
+                    <div class="col-2">
+                        <img src="./images/avatar2.jpg" alt="Profile Picture" class="avatar" width="90" height="90">
+                    </div>
+                    <div class="col-10">
+                        <div class="comment py-2 px-2">
+                            <p class="text-black">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi debitis, delectus eligendi eveniet explicabo fugiat ipsam iste itaque minima molestias nihil optio porro quia rem sint ullam? Minima, quos!</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-around review align-center py-2">
+                    <div class="col-2">
+                        <img src="./images/avatar3.jpg" alt="Profile Picture" class="avatar" width="90" height="90">
+                    </div>
+                    <div class="col-10">
+                        <div class="comment py-2 px-2">
+                            <p class="text-black">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam aliquid animi atque dolore ex fugiat hic modi, numquam officiis perferendis quia ratione repellendus repudiandae tenetur ut vel veniam vero!</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-around review align-center py-2">
+                    <div class="col-2">
+                        <img src="./images/avatar4.jpg" alt="Profile Picture" class="avatar" width="90" height="90">
+                    </div>
+                    <div class="col-10">
+                        <div class="comment py-2 px-2">
+                            <p class="text-black">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur dignissimos harum nobis numquam quibusdam quo repellat similique soluta veritatis? Eius molestiae nam non sed temporibus? Dolorem exercitationem quidem repudiandae?</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="px-10 py-8">
+    <div class="row d-flex justify-between">
+        <div class="col-4">
+            <img src="./images/bookshelves.png" alt="bookshelves logo" class="footer-logo" width="269" height="284">
+        </div>
+        <div class="col-8">
+            <div class="row">
+                <h2 class="footer-title ml-20">Keep up with our latest additions</h2>
+            </div>
+            <div class="row">
+                <form action="#">
+                    <div class="d-flex form justify-center">
+                        <input type="text" placeholder="your e-mail" class="form-field py-2 px-8">
+                        <button type="submit" class="submit btn btn-primary">Subscribe now</button>
+                    </div>
+                </form>
+            </div>
+            <div class="row mt-10 d-flex align-end footer-links">
+                <ul class="col-4">
+                    <li class="mt-4">
+                        <a href="index.html" class="nav-link text-white">Home</a>
+                    </li>
+                    <li class="mt-4">
+                        <a href="library.html" class="nav-link text-white">Library</a>
+                    </li>
+                    <li class="mt-4">
+                        <a href="inspiration.html" class="nav-link text-white">Inspiration</a>
+                    </li>
+                    <li class="mt-4">
+                        <a href="contact.html" class="nav-link text-white">Contact</a>
+                    </li>
+                    <li class="mt-4">
+                        <span class="nav-link text-white" onclick="showBookRef()" id="bookRef">References</span>
+                    </li>
+                </ul>
+                <ul class="col-6 social d-flex justify-end">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./images/icons8-facebook-48.png" alt="facebook logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="./images/icons8-instagram-48.png" alt="instagram logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="./images/icons8-youtube-48.png" alt="youtube logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row pt-12" id="bookRefList">
+        <p class="text-white font-regular">
+            Atomic Habits. (n.d.). Amazon.
+            https://www.amazon.co.uk/Atomic-Habits-Proven-Build-Break/dp/1847941834/ref=pd_bxgy_img_sccl_1/259-7882550-1858737?pd_rd_w=Yp4YP&content-id=amzn1.sym.adaa6e74-ba24-420a-83eb-f68e38f864e8&pf_rd_p=adaa6e74-ba24-420a-83eb-f68e38f864e8&pf_rd_r=KFNDXEJMA039APFF2EN2&pd_rd_wg=TXpUO&pd_rd_r=8b28b609-78b6-43e0-ad08-98696f649468&pd_rd_i=1847941834&psc=1
+            <br>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
